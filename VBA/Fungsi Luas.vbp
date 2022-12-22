@@ -1,0 +1,79 @@
+Rem Luas Persegi Panjang
+Function L_SegiPanjang(Panjang As Double, Lebar As Double) As Double
+
+    Rem metode
+    L_SegiPanjang = Panjang * Lebar
+
+End Function
+
+Rem Keliling Persegi Panjang
+Function K_SegiPanjang(Panjang As Double, Lebar As Double) As Double
+
+    Rem metode
+    K_SegiPanjang = 2 * (Panjang + Lebar)
+
+End Function
+
+Rem Luas Persegi
+Function L_Persegi(Sisi As Double) As Double
+
+    Rem metode
+    L_Persegi = Sisi * Sisi
+
+End Function
+
+Rem Keliling Persegi
+Function K_Persegi(Sisi As Double) As Double
+
+    Rem metode
+    K_Persegi = 4 * Sisi
+
+End Function
+
+Rem Luas Segitiga
+Function L_Segitiga(Alas As Double, Tinggi As Double) As Double
+
+    Rem metode
+    L_Segitiga = 1 / 2 * Alas * Tinggi
+
+End Function
+
+Rem Keliling Segitiga
+Function K_Segitiga(a As Double, b As Double, c As Double) As Double
+
+    Rem metode
+    K_Segitiga = a + b + c
+    
+End Function
+
+Rem Luas Jajar Genjang
+Function L_JajarGenjang(Alas As Double, Tinggi As Double) As Double
+
+    Rem metode
+    L_JajarGenjang = Alas * Tinggi
+
+End Function
+
+Rem Keliling Jajar Genjang
+Function K_JajarGenjang(a As Double, b As Double) As Double
+
+    Rem metode
+    K_JajarGenjang = 2 * (a + b)
+
+End Function
+
+Rem Luas Trapesium
+Function L_Trapesium(a As Double, b As Double, t As Double) As Double
+
+    Rem metode
+    L_Trapesium = 1 / 2 * (a + b) * t
+    
+End Function
+
+Rem Keliling Trapesium
+Function K_Trapesium(ab As Double, bc As Double, cd As Double, da As Double) As Double
+
+    Rem metode
+    K_Trapesium = ab + bc + cd + da
+    
+End Function
