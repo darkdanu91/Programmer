@@ -1,0 +1,39 @@
+Sub contoh()
+
+Rem deklarasi
+Dim a As String, b As Date, c As Currency
+
+Dim sh As Worksheet
+Set sh = Sheet3
+
+Dim sh4 As Worksheet
+Set sh4 = Sheet4
+
+Rem metode
+a = "Danu"
+b = "08-08-1982"
+c = "500000"
+
+Rem untuk worksheets satu
+Range("D2").Value = a
+Range("D3").Value = b
+Range("D4").Value = c
+
+Rem untuk worksheets berbeda
+Worksheets("Sheet2").Range("D2").Value = a
+Worksheets("Sheet2").Range("D3").Value = b
+Worksheets("Sheet2").Range("D4").Value = c
+
+Rem untuk worksheets dengan tipe data bentukan
+sh.Range("D2").Value = a
+sh.Range("D3").Value = b
+sh.Range("D4").Value = c
+
+Rem worksheets dengan modifikasi 'with'
+With sh4
+    .Range("D2").Value = a
+    .Range("D3").Value = b
+    .Range("D4").Value = c
+End With
+
+End Sub
