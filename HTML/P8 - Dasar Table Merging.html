@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Paragraf</title>
+</head>
+
+<body>
+
+    <!-- tabel simpel -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr> <!-- baris 1 -->
+            <td>1,1</td> <!-- kolom 1 -->
+            <td>1,2</td> <!-- kolom 2 -->
+            <td>1,3</td> <!-- kolom 3 -->
+        </tr>
+
+        <tr> <!-- baris 2 -->
+            <td>2,1</td> <!-- kolom 1 -->
+            <td>2,2</td> <!-- kolom 2 -->
+            <td>2,3</td> <!-- kolom 3 -->
+        </tr>
+
+        <tr> <!-- baris 3 -->
+            <td>3,1</td> <!-- kolom 1 -->
+            <td>3,2</td> <!-- kolom 2 -->
+            <td>3,3</td> <!-- kolom 3 -->
+        </tr>
+    </table>
+
+    <!-- tabel simpel merging -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr> <!-- baris 1 -->
+            <td rowspan="3">rowspan 3</td> <!-- menggabungkan 3 sel (vertikal) -->
+            <td colspan="2">colspan 2</td> <!-- menggabungkan 2 sel (horizontal) -->
+        </tr>
+
+        <tr> <!-- baris 2 -->
+            <td>2,2</td> <!-- kolom 2 -->
+            <td>2,3</td> <!-- kolom 3 -->
+        </tr>
+
+        <tr> <!-- baris 3 -->
+            <td>3,2</td> <!-- kolom 2 -->
+            <td>3,3</td> <!-- kolom 3 -->
+        </tr>
+    </table>
+</body>
+
+</html>
