@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Paragraf</title>
+</head>
+
+<body>
+    <!-- list terurut (ordered list) -->
+    <h3>to do list</h3> <!-- heading3 -->
+    <ol>
+        <!-- list berurut 123 -->
+        <li>bangun pagi</li>
+        <li>sarapan</li>
+        <li>tidur lagi</li>
+    </ol> <!-- endlist -->
+
+    <ol type="A">
+        <!-- list berurut ABC -->
+        <li>bangun pagi</li>
+        <li>sarapan</li>
+        <li>tidur lagi</li>
+    </ol> <!-- endlist -->
+
+    <ol type="i">
+        <!-- list berurut i ii iii -->
+        <li>bangun pagi</li>
+        <li>sarapan</li>
+        <li>tidur lagi</li>
+    </ol> <!-- endlist -->
+
+    <!-- list tidak terurut (unordered list) -->
+    <h3>to do list2</h3> <!-- heading3 -->
+    <ul>
+        <!-- list tidak berurut (bulat) -->
+        <li>nasi goreng</li>
+        <li>mie goreng</li>
+        <li>telur dadar</li>
+    </ul> <!-- endlist -->
+
+    <ul type="square">
+        <!-- list tidak berurut (kotak) -->
+        <li>nasi goreng</li>
+        <li>mie goreng</li>
+        <li>telur dadar</li>
+    </ul> <!-- endlist -->
+
+    <ul type="circle">
+        <!-- list tidak berurut (bulat donat) -->
+        <li>nasi goreng</li>
+        <li>mie goreng</li>
+        <li>telur dadar</li>
+    </ul> <!-- endlist -->
+
+    <!-- list definisi (definition list) -->
+    <h3>to do list3</h3> <!-- heading3 -->
+    <dl>
+        <dt><strong>html</strong></dt>
+        <dd>hypertext markup language</dd>
+
+        <dt><strong>css</strong></dt>
+        <dd>cascading style sheet</dd>
+    </dl>
+</body>
+
+</html>
