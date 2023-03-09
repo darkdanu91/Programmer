@@ -1,7 +1,13 @@
+/* all-body */
 body {
     /* set background-color */
     background-color: brown;
-    
+
     /* set text-color */
     color: white;
+}
+
+/* all-div */
+div {
+    background-color: black;
 }
