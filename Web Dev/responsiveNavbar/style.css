@@ -102,4 +102,117 @@ a {
     gap: 1rem;
 }
 
-/* Styling
+/* Style untuk button login dan register pada navbar */
+.navbar-container .nav-items .login-register .button {
+    color: #fff;
+    border: 2px solid rgb(116, 36, 255);
+    padding: 5px 20px;
+    border-radius:3px ;
+    -webkit-border-radius:3px ;
+    -moz-border-radius:3px ;
+    -ms-border-radius:3px ;
+    -o-border-radius:3px;
+    text-transform: uppercase;
+    transition: all ease-in 0.3s;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+}
+
+/* Style untuk button login dan register pada navbar saat di hover */
+.navbar-container .nav-items .login-register .button:hover {
+    background: rgb(116, 36, 255);
+}
+
+/* Style untuk konten utama pada halaman */
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Style untuk tampilan pada layar iPad */
+@media(max-width: 1000px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-container .nav-items {
+        gap: 0.1rem;
+    }
+
+    .navbar-container .nav-items .nav-link a, .navbar-container .nav-items .login-register .button {
+        font-size: 0.9rem;
+    }
+
+}
+
+/* Style untuk tampilan pada layar mobile */
+@media(max-width: 700px) {
+    .navbar-container .nav-items {
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        width: 100vw;
+        background: rgb(35, 29, 53);
+        padding: 1rem 0;
+        height: 100vh;
+        z-index: 99;
+        right: -100%; 
+        transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+}
+
+/* Style untuk button hamburger pada layar mobile */
+.bars {
+    height: auto;
+    width: 22px;
+    cursor: pointer;
+}
+
+/* Style untuk bar pada button hamburger pada layar mobile */
+.bars .bar {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    margin: 4px;
+}
+
+.navbar-container .nav-items {
+    gap: 3rem;
+}
+
+/* Style untuk tampilan login dan register pada layar mobile */
+.navbar-container .nav-items .login-register {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    width: 50%;
+}
+
+/* Style untuk button login dan register pada layar mobile */
+.navbar-container .nav-items .login-register .button {
+    padding: 1rem 0;
+}
+
+/* Style untuk konten utama pada layar mobile */
+.main {
+    font-size: 2rem;
+}
+}
+
+/* Kelas aktif di bawah ini akan digunakan untuk mengaktifkan nav -items di JS */
+.navbar-container .nav-items.active {
+    right: 0;
+}
+
+/* End of styles */
