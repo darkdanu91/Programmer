@@ -1,0 +1,105 @@
+/* Import Google Font Kanit dan Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Poppins:wght@500&display=swap');
+
+/* Set box-sizing, margin, padding dan font-family untuk semua elemen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+
+/* Styling untuk elemen body */
+body {
+    background: rgba(11, 5, 29, 0.946);
+}
+
+/* Styling untuk elemen anchor */
+a {
+    text-decoration: none;
+}
+
+/* Styling untuk navbar-container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+    align-items: center;
+    background: rgba(11, 5, 29, 0.966);
+    color: #fff;
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+
+/* Styling untuk logo pada navbar-container */
+.navbar-container .logo-container a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Styling untuk navigasi pada navbar-container */
+.navbar-container .nav-items {
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Styling untuk setiap elemen navigasi pada navbar-container */
+.navbar-container .nav-items .nav-link a {
+    color: #fff;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Styling untuk garis pada setiap elemen navigasi pada navbar-container */
+.navbar-container .nav-items .nav-link:after {
+    display: block;
+    content: "";
+    border-top: 2px solid rgb(140, 73, 254);
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
+}
+
+/* Styling untuk garis pada setiap elemen navigasi saat di hover pada navbar-container */
+.navbar-container .nav-items .nav-link:hover:after {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+} 
+
+/* Styling untuk setiap elemen navigasi saat di hover pada navbar-container */
+.navbar-container .nav-items .nav-link a:hover {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+
+/* Styling untuk menu login/register pada navbar-container */
+.navbar-container .nav-items .login-register {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* Styling
