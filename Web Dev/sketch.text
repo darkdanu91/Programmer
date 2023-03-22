@@ -1,0 +1,61 @@
+// start navbar
+navbar(class="navbar-container") {
+	
+	// div logo
+	div logo(class="navbar-container") {
+		a(href="index.html") {
+			printf("danu pratama");
+		}
+	} // end-div
+	
+	// div button hamburger for mobile
+	div button(class="bars") {
+		div slice1(class="bar");
+		div slice2(class="bar");
+		div slice3(class="bar");
+	} // end-div
+	
+	// list menu
+	list menu(class="nav-items") {
+		line home(class="nav-link") {
+			a(href="home.html") {
+				printf("home");
+			}
+		}
+		
+		line service(class="nav-link") {
+			a(href="service.html") {
+				printf("service");
+			}
+		}
+		
+		line project(class="nav-link") {
+			a(href="project.html") {
+				printf("project");
+			}
+		}
+		
+		line about(class="nav-link") {
+			a(href="about.html") {
+				printf("About");
+			}
+		}
+		
+		// div button login and register
+		div button_loginReg(class="login-register") {
+			a(href="login.html", class="button") {
+				printf("login");
+			}
+			
+			a(href="register.html", class="button") {
+				printf("register");
+			}
+		}
+		
+	} // end-list
+} // end-navbar
+
+// div main
+div main(class="main") {
+	printf("welcome to my art");
+} // end-div
