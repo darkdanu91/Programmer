@@ -1,0 +1,19 @@
+procedure GetIMin(input A: Larik, input N: integer, output IMin: integer)
+{menentukan indeks tempat harga minimum elemen larik A[1..N] berada}
+{K. Awal: Larik A[1..N] terdefinisi}
+{K.Akhir: IMin terdefinisi, yaitu indeks tempat harga minimum elemen larik berada}
+
+    declare k: integer
+    
+    // algorithm
+    IMin ← 1 // inisialisasi IMin dengan indeks elemen pertama
+    
+    // perulangan untuk mencari elemen terkecil
+    for k ← 2 to N do
+        if A[k] < A[IMin] then
+            IMin ← k // jika menemukan elemen yang lebih kecil, update IMin
+        endif
+    endfor
+    
+    output IMin // keluarkan hasil indeks elemen terkecil
+EndProcedure
