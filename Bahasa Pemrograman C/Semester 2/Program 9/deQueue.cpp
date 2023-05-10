@@ -12,3 +12,12 @@ void deQueue(antrian *Q, tInfo *X) {
     }
     (*Q).tail--;
 }
+
+// Komentar:
+// Fungsi untuk menghapus elemen pertama dari antrian
+// Parameter Q adalah antrian yang akan dihapus elemennya
+// Parameter X adalah elemen yang dihapus
+// Elemen yang dihapus adalah elemen pertama pada antrian (head)
+// Jika antrian kosong (head == tail), maka kedua pointer diatur ke 0
+// Jika antrian tidak kosong, elemen pada indeks 2 hingga tail digeser ke kiri
+// tail dikurangi 1 agar menunjuk ke elemen terakhir pada antrian yang baru.
