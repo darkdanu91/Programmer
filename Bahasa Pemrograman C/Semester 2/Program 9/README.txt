@@ -12,3 +12,7 @@ procedure EnQueue(input/output Q: Antrian, input X: TInfo)
             write("overflow")
         endif 
     endif
+
+-----------------------
+
+
