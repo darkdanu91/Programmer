@@ -12,3 +12,11 @@ void enQueue(antrian *Q, tInfo X) {
         printf("overflow\n");
     }
 }
+
+// Komentar:
+// Prosedur untuk menambahkan elemen baru pada antrian
+// Parameter Q adalah antrian yang akan ditambahkan elemen baru
+// Parameter X adalah elemen yang akan ditambahkan pada antrian
+// Jika antrian kosong, elemen X akan ditambahkan pada indeks head dan tail antrian
+// Jika tail antrian masih kurang dari nMax, elemen X akan ditambahkan pada tail antrian
+// Jika tail antrian sudah sama dengan nMax, maka antrian sudah penuh (overflow), sehingga tidak bisa menambahkan elemen baru.
