@@ -1,6 +1,6 @@
 #include "function.h"
 
-void DeQueue(antrian *Q, tInfo *X) {
+void deQueue(antrian *Q, tInfo *X) {
     *X = (*Q).arrQ[(*Q).head];
     if ((*Q).tail == (*Q).head) {
         (*Q).tail = 0;
