@@ -4,26 +4,21 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define info(p) (p)->info
-#define next(p) (p)->next
-
-const int NMax = 5;
-typedef int TInfo;
-typedef int Address;
+const int NMax = 5; // Konstanta untuk ukuran maksimum Stack
+typedef int TInfo; // Tipe data untuk elemen Stack
+typedef int Address; // Tipe data untuk alamat Stack
 
 typedef struct {
-    Address Top;
-    TInfo ArrStack[NMax+1];
+    Address Top; // Indeks dari elemen teratas Stack
+    TInfo ArrStack[NMax+1]; // Array untuk menyimpan elemen-elemen Stack
 } Stack;
 
-// prosedur
-void CreateStack(Stack *S);
-bool EmptyStack(Stack S);
-void Push(Stack *S, TInfo X);
-void Pop(Stack *S, TInfo *X);
-void Print(Stack S);
+// prosedur-prosedur
+void CreateStack(Stack *S); // Prosedur untuk menginisialisasi Stack
+bool EmptyStack(Stack S); // Fungsi untuk memeriksa apakah Stack kosong
+void Push(Stack *S, TInfo X); // Prosedur untuk menambahkan elemen ke Stack
+void Pop(Stack *S, TInfo *X); // Prosedur untuk menghapus elemen teratas dari Stack
+void Print(Stack S); // Prosedur untuk mencetak elemen-elemen dalam Stack
 
 // fungsi
-bool Finished(int Choice);
-
-
+bool Finished(int Choice); // Fungsi untuk memeriksa apakah program selesai
