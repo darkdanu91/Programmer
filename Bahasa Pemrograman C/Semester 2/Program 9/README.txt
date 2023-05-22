@@ -1,3 +1,5 @@
+https://replit.com/@MUHAMMAD-DANUD1/Program-Semester-2-Modul9
+
 procedure EnQueue(input/output Q: Antrian, input X: TInfo)
     //-algorithm
     if emptyQ(Q) then 
