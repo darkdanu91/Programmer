@@ -1,0 +1,122 @@
+/* reset css
+agar tampilan di situs menjadi default dan
+enak untuk dieksekusi
+*/
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
+
+/* navbar */
+nav {
+    /* background navbar */
+    background-color: #3fa097;
+
+    /* untuk membuat elemen bersampingan */
+    display: flex;
+
+    /* untuk mengatur letak elemen
+    item pertama akan terletak di tepi kiri kontainer, item terakhir akan terletak di tepi kanan kontainer, dan item-item yang berada di antara mereka akan didistribusikan secara merata dalam sisa ruang yang tersedia.
+    */
+    justify-content: space-between;
+
+    /* memberikan space/jarak di setiap bingkai
+    value1 (1rem): atas-bawah
+    value2 (2rem): kiri-kanan
+    */
+    padding: 1rem 5rem;
+}
+
+/* list navbar */
+nav ul {
+    /* untuk membuat elemen bersampingan */
+    display: flex;
+
+    /* untuk membuat semua elemen berada di tengah-kiri */
+    align-items: center;
+
+    /* untuk memberikan jarak antar menu */
+    gap: 3rem;
+
+    /* untuk menghilangkan bullet (titik-titik) pada list */
+    list-style: none;
+
+    /* untuk mengatur ketebalan font */
+    font-weight: 600;
+}
+
+/* mengatur ukuran gambar logo Navbar */
+nav div img {
+    width: 50px;
+}
+
+nav ul li a {
+    /* untuk menghilangkan garis bawah pada sebuah link */
+    text-decoration: none;
+
+    /* menentukan dua font untuk dipakai */
+    font-family: 'Segoe UI', sans-serif;
+
+    /* warna font */
+    color: white;
+
+    /* memberikan space/jarak di setiap bingkai
+    value1 (8px): atas-bawah
+    value2 (0px): kiri-kanan
+    */
+    padding: 8px 0px;
+
+    /* memberikan efek smooth */
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+/* link menu */
+nav ul li a:hover {
+    color: orangered;
+
+    /* membuat garis bawah saat kursor berada di link */
+    border-bottom: 1px solid black;
+}
+
+.menu-icon {
+    /* warna icon */
+    /* background-color: tomato; */
+
+    /* ukuran icon */
+    font-size: 28px;
+
+    /* untuk membuat icon hilang */
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        /* untuk menyembunyikan elemen */
+        /* display: none; */
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        /* untuk membuat elemen di tengah */
+        display: flex;
+        align-items: center;
+    }
+}
