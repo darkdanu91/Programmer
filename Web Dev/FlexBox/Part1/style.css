@@ -1,0 +1,57 @@
+/* reset css
+agar tampilan di situs menjadi default dan
+enak untuk dieksekusi
+*/
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* container atau pembungkus */
+.container {
+    
+    /* garis tepi */
+    border: 5px solid #333;
+
+    /* lebar container */
+    width: 600px;
+
+    /* jarak di luar container */
+    margin: 30px auto;
+
+    /* jarak di dalam container */
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    /* flexbox */
+    display: flex;
+
+    /* flex-direction */
+    flex-direction: row;
+
+    /* flex-wrap */
+    flex-wrap: wrap;
+
+    /* justify-content */
+    justify-content: space-evenly;
+}
+
+/* items pada container */
+.container div {
+    
+    /* lebar item */
+    width: 120px;
+
+    /* tinggi item */
+    height: 120px;
+
+    /* warna bg item */
+    background-color: rgb(35, 146, 197);
+
+    /* jarak di luar antara item */
+    margin: 2px;
+
+}
