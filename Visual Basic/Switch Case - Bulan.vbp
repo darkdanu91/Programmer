@@ -1,0 +1,33 @@
+Private Sub Command1_Click()
+    Dim x As Integer
+    x = Val(inputBulan.Text)
+    
+    Select Case x
+        Case 1
+            namaBulan.Caption = "Januari"
+        Case 2
+            namaBulan.Caption = "Februari"
+        Case 3
+            namaBulan.Caption = "Maret"
+        Case 4
+            namaBulan.Caption = "April"
+        Case 5
+            namaBulan.Caption = "Mei"
+        Case 6
+            namaBulan.Caption = "Juni"
+        Case 7
+            namaBulan.Caption = "Juli"
+        Case 8
+            namaBulan.Caption = "Agustus"
+        Case 9
+            namaBulan.Caption = "September"
+        Case 10
+            namaBulan.Caption = "Oktober"
+        Case 11
+            namaBulan.Caption = "November"
+        Case 12
+            namaBulan.Caption = "Desember"
+        Case Else
+            namaBulan.Caption = "Bulan tidak valid"
+    End Select
+End Sub
