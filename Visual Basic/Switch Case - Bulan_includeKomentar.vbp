@@ -1,0 +1,46 @@
+Private Sub Command1_Click()
+    ' Mendeklarasikan variabel x sebagai bilangan bulat (Integer)
+    Dim x As Integer
+    
+    ' Mengambil nilai dari inputBulan dan mengonversinya ke dalam tipe data Integer
+    x = Val(inputBulan.Text)
+    
+    ' Memulai struktur pemilihan (Select Case) berdasarkan nilai variabel x
+    Select Case x
+        ' Jika x sama dengan 1, maka namaBulan akan diset menjadi "Januari"
+        Case 1
+            namaBulan.Caption = "Januari"
+        
+        ' Jika x sama dengan 2, maka namaBulan akan diset menjadi "Februari"
+        Case 2
+            namaBulan.Caption = "Februari"
+        
+        ' Jika x sama dengan 3, maka namaBulan akan diset menjadi "Maret"
+        Case 3
+            namaBulan.Caption = "Maret"
+        
+        ' Dan seterusnya, hingga bulan Desember (Case 12), masing-masing case menentukan nama bulan yang sesuai
+        Case 4
+            namaBulan.Caption = "April"
+        Case 5
+            namaBulan.Caption = "Mei"
+        Case 6
+            namaBulan.Caption = "Juni"
+        Case 7
+            namaBulan.Caption = "Juli"
+        Case 8
+            namaBulan.Caption = "Agustus"
+        Case 9
+            namaBulan.Caption = "September"
+        Case 10
+            namaBulan.Caption = "Oktober"
+        Case 11
+            namaBulan.Caption = "November"
+        Case 12
+            namaBulan.Caption = "Desember"
+        
+        ' Jika x tidak sama dengan 1-12, maka namaBulan akan diset menjadi "Bulan tidak valid"
+        Case Else
+            namaBulan.Caption = "Bulan tidak valid"
+    End Select
+End Sub
